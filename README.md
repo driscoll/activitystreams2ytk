@@ -1,6 +1,6 @@
 # activitystreams2ytk.py
 
-Transform Activity Streams objects into CSV rows for use with metrify.awk
+__**Transform Activity Streams objects into CSV rows for use with metrify.awk**__
 
 Kevin Driscoll, kedrisco@usc.edu, public domain, 2013
 
