@@ -15,19 +15,19 @@ Output conforms to the CSV output of the [modified yourTwapperKeeper](http://map
 
 Tweets are sorted in ascending order according to the value in the "time" column.
 
-*_text_: tweet text 
-*_to_user_id_: user_id if the tweet begins with @username
-*_from_user_: screen_name of the user sending the tweet 
-*_id_: numeric id of the tweet (must be stored as a string) 
-*_from_user_id_: user_id of the user sending the tweet
-*_iso_language_code_: two letter language code, e.g. "en"
-*_source_: application sending this tweet (may include HTML)
-*_profile_image_url_: URL pointing to the sending user's profile photo
-*_geo_type_: type of location information included, e.g. "Point"
-*_geo_coordinates_0_: latitude
-*_geo_coordinates_1_: longitude   
-*_created_at_: idiosyncraticly formed human-readable date and time 
-* _time_: created_at in Seconds since UNIX epoch via [PHP time() function](http://php.net/manual/en/function.time.php) 
+* __text__: tweet text
+* __to_user_id__: user_id if the tweet begins with @username
+* __from_user__: screen_name of the user sending the tweet
+* __id__: numeric id of the tweet (must be stored as a string)
+* __from_user_id__: user_id of the user sending the tweet
+* __iso_language_code__: two letter language code, e.g. "en"
+* __source__: application sending this tweet (may include HTML)
+* __profile_image_url__: URL pointing to the sending user's profile photo
+* __geo_type__: type of location information included, e.g. "Point"
+* __geo_coordinates_0__: latitude
+* __geo_coordinates_1__: longitude  
+* __created_at__: idiosyncraticly formed human-readable date and time
+* __time__: created_at in Seconds since UNIX epoch via [PHP time() function](http://php.net/manual/en/function.time.php)
 
 ## Usage
 
