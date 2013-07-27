@@ -2,12 +2,10 @@
 
 Kevin Driscoll, kedrisco@usc.edu, public domain, 2013
 
-
 ## Input
 
 Input files consist of tweets in Activity Streams JSON format, 
 one per line, as they are returned from [Gnip PowerTrack](http://support.gnip.com/customer/portal/articles/477765-twitter-activity-streams-format).
-
 
 ## Output
 
