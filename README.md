@@ -13,8 +13,9 @@ one per line, as they are returned from [Gnip PowerTrack](http://support.gnip.co
 
 Output conforms to the CSV output of the [modified yourTwapperKeeper](http://mappingonlinepublics.net/2011/06/21/switching-from-twapperkeeper-to-yourtwapperkeeper/):
 
-Tweets are sorted in ascending order according to the value in the "time" column.
+__Note__: rows must be sorted in ascending order according to the value in the "time" column.
 
+### Columns
 * __text__: tweet text
 * __to_user_id__: user_id if the tweet begins with @username
 * __from_user__: screen_name of the user sending the tweet
