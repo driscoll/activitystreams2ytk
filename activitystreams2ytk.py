@@ -58,6 +58,7 @@ import fileinput
 import json
 
 YTK_DATETIME_FORMAT = '%a %b %d %H:%M:%S +0000 %Y'
+SEPARATOR = ','
 
 headings = [
     "text",
@@ -86,7 +87,7 @@ for line in fileinput.input():
     tweets.append(tweet)
 
 # Output a row of headings
-row = unicode(u','.join(headings))
+row = unicode(SEPARATOR.join(headings))
 print row.encode('utf-8')
 
 # Iterate over tweets in ascending chronological order
@@ -113,7 +114,7 @@ for tweet in sorted(tweets, key=lambda t: t['time']):
 
     # Sequence and format according to the column order
     cols = [
-        tweet['body'].replace('\n','').replace('\r','').replace(',',''),
+        tweet['body'].replace('\n','').replace('\r','').replace(SEPARATOR,''),
         to_user_id,
         tweet['actor']['preferredUsername'],
         tweet['id_str'],
@@ -131,7 +132,7 @@ for tweet in sorted(tweets, key=lambda t: t['time']):
     # Combine into one Unicode string and print
     row = u''
     for col in cols:
-        row += u'{0},'.format(unicode(col))
+        row += u'{0}{1}'.format(unicode(col, SEPARATOR))
     row = row[:-1] 
     print row.encode('utf-8')
 
