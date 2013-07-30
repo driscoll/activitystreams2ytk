@@ -58,7 +58,7 @@ import fileinput
 import json
 
 YTK_DATETIME_FORMAT = '%a %b %d %H:%M:%S +0000 %Y'
-SEPARATOR = ','
+SEPARATOR = u','
 
 headings = [
     "text",
@@ -97,7 +97,7 @@ for tweet in sorted(tweets, key=lambda t: t['time']):
     if 'inReplyTo' in tweet:
         # Sort mentions by order they appear in the tweet text
         mentions = sorted(tweet['twitter_entities']['user_mentions'], 
-                            key=lambda m: m['indices'][0])[0]['id_str']
+                            key=lambda m: m['indices'][0])
         to_username = mentions[0]['screen_name']
         to_user_id = mentions[0]['id_str']
     else:
@@ -132,7 +132,7 @@ for tweet in sorted(tweets, key=lambda t: t['time']):
     # Combine into one Unicode string and print
     row = u''
     for col in cols:
-        row += u'{0}{1}'.format(unicode(col, SEPARATOR))
+        row += u'{0}{1}'.format(unicode(col), SEPARATOR)
     row = row[:-1] 
     print row.encode('utf-8')
 
