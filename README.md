@@ -30,7 +30,7 @@ __Note__: rows must be sorted in ascending order according to the value in the "
 * __geo_coordinates_0__: latitude
 * __geo_coordinates_1__: longitude  
 * __created_at__: idiosyncraticly formed human-readable date and time
-* __time__: created_at in Seconds since UNIX epoch via [PHP time() function](http://php.net/manual/en/function.time.php)
+* __time__: created_at in seconds since UNIX epoch via [PHP time() function](http://php.net/manual/en/function.time.php)
 
 ## Usage
 
