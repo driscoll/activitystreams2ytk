@@ -13,6 +13,8 @@ one per line, as they are returned from [Gnip PowerTrack](http://support.gnip.co
 
 Output conforms to the CSV output of the [modified yourTwapperKeeper](http://mappingonlinepublics.net/2011/06/21/switching-from-twapperkeeper-to-yourtwapperkeeper/):
 
+__Note__: changing the value of SEPARATOR to '\t' will output tab-separated values instead of CSV. 
+
 __Note__: rows must be sorted in ascending order according to the value in the "time" column.
 
 ### Columns
